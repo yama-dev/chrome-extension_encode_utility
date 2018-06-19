@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Encode Utility.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Encode Utility.",
   "author": "yama-dev",
   "icons": {

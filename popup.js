@@ -25,27 +25,27 @@ chrome.tabs.getSelected(null, function(tab){
     const url = tab.url;
     const text = response.text;
     const count = response.count;
-    document.querySelector('#inputBefore').value = text;
+    document.querySelector('#inputBefore').innerHTML = text;
     document.querySelector('.input-before-count').innerHTML = count;
-    document.querySelector('#inputAfter').value = encodeURI(text);
+    document.querySelector('form').inputAfter.value = encodeURI(text);
   });
 });
 
 let elemBtnEncode = document.querySelector('.btn-encode');
 elemBtnEncode.addEventListener('click', (e) => {
-  let text = document.querySelector('#inputBefore').value;
-  let count = document.querySelector('#inputBefore').value.length;
+  let text = document.querySelector('form').inputBefore.value;
+  let count = document.querySelector('form').inputBefore.value.length;
   if(count == 0){
     alert(' Text has not been entered. ');
   }
-  document.querySelector('#inputBefore').value = text;
+  document.querySelector('form').inputBefore.value = text;
   document.querySelector('.input-before-count').innerHTML = count;
-  document.querySelector('#inputAfter').value = encodeURI(text);
+  document.querySelector('form').inputAfter.value = encodeURI(text);
 });
 
 const elemBtnCopy = document.querySelector('.btn-copy');
 elemBtnCopy.addEventListener('click', (e) => {
-  copyTextToClipboard(document.querySelector('#inputAfter').value);
+  copyTextToClipboard(document.querySelector('form').inputAfter.value);
   alert(' Copy completion. ');
 });
 

@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Encode Utility.</title>
   <link rel="stylesheet" href="./bootstrap.4.1.0.min.css" type="text/css" charset="utf-8">
 <style>
 body {
@@ -22,11 +22,11 @@ body {
   <form>
     <div class="form-group">
       <label for="inputBefore">選択テキスト（文字数：<span class="input-before-count"></span>）</label>
-      <input type="text" class="form-control" id="inputBefore" placeholder="input...">
+      <textarea type="text" class="form-control" id="inputBefore" name="inputBefore" placeholder="input..." rows="3"></textarea>
     </div>
     <div class="form-group">
       <label for="inputAfter">エンコード後</label>
-      <input type="text" class="form-control" id="inputAfter" placeholder="output..." disabled>
+      <textarea type="text" class="form-control" id="inputAfter" name="inputAfter" placeholder="output..." disabled></textarea>
     </div>
   </form>
 

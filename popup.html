@@ -8,14 +8,17 @@
 body {
   width: 300px;
   height: 300px;
-  padding: 10px 0;
+  padding: 15px 0 0;
 }
 </style>
 </head>
 <body>
 <div class="container-fluid">
-  <p class="title">Encode Utility.</p>
+
+  <h1 class="title" style="font-size: 16px;">Encode Utility.</h1>
+
   <hr>
+
   <form>
     <div class="form-group">
       <label for="inputBefore">選択テキスト（文字数：<span class="input-before-count"></span>）</label>
@@ -28,9 +31,14 @@ body {
   </form>
 
   <p class="btn btn-primary  btn-encode">選択テキストをエンコード</p>
+
   <p class="btn btn-secondary btn-copy">エンコード結果をクリップボードにコピー</p>
 
+  <p class="copy text-right" style="font-size: 10px;">&copy; @yama-dev</p>
+
 </div>
+
 <script src="./popup.js"></script>
+
 </body>
 </html>
